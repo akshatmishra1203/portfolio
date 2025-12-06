@@ -1,0 +1,141 @@
+<svg width="800" height="800" viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg" fill="none">
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="amGradient" x1="0" y1="0" x2="800" y2="800">
+      <stop offset="0%" stop-color="#ff2727"/>
+      <stop offset="30%" stop-color="#006dff"/>
+      <stop offset="65%" stop-color="#ffe600"/>
+      <stop offset="100%" stop-color="#00d96b"/>
+    </linearGradient>
+    <linearGradient id="chrome" x1="0" y1="0" x2="800" y2="800">
+      <stop offset="0%" stop-color="#9aa3ab"/>
+      <stop offset="40%" stop-color="#e6e8ea"/>
+      <stop offset="100%" stop-color="#5d6368"/>
+    </linearGradient>
+    <linearGradient id="textStroke" x1="0" y1="0" x2="800" y2="800">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#cfcfcf"/>
+    </linearGradient>
+
+    <!-- Filters -->
+    <filter id="deepGlow">
+      <feDropShadow dx="0" dy="0" stdDeviation="8" flood-color="#ff2a2a" flood-opacity="0.95"/>
+    </filter>
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Inner shine for subtle highlight -->
+    <radialGradient id="innerShine" cx="50%" cy="30%" r="60%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.6"/>
+      <stop offset="40%" stop-color="#ffffff" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Outer tech rings -->
+  <circle cx="400" cy="400" r="320" stroke="url(#chrome)" stroke-width="26" fill="none"/>
+  <circle cx="400" cy="400" r="285" stroke="url(#amGradient)" stroke-width="8" fill="none" stroke-dasharray="20 12"/>
+  <circle cx="400" cy="400" r="245" stroke="url(#chrome)" stroke-width="4" fill="none" stroke-dasharray="6 10"/>
+
+  <!-- Subtle diagonal background sheen -->
+  <rect x="0" y="0" width="800" height="800" fill="url(#innerShine)" opacity="0.06"/>
+
+  <!-- Circuit traces (decor) -->
+  <g stroke="url(#amGradient)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" opacity="0.95">
+    <path d="M140 360 C190 300 260 280 330 300" fill="none"/>
+    <circle cx="140" cy="360" r="6" fill="#001"/>
+    <path d="M660 440 C610 500 540 520 470 500" fill="none"/>
+    <circle cx="660" cy="440" r="6" fill="#001"/>
+  </g>
+
+  <!-- Server stack icon (left) -->
+  <g transform="translate(110,480) scale(0.9)">
+    <rect x="0" y="-120" width="90" height="18" rx="4" fill="url(#chrome)" stroke="#222" stroke-width="1"/>
+    <rect x="0" y="-96" width="90" height="18" rx="4" fill="url(#chrome)" stroke="#222" stroke-width="1"/>
+    <rect x="0" y="-72" width="90" height="18" rx="4" fill="url(#chrome)" stroke="#222" stroke-width="1"/>
+    <circle cx="12" cy="-111" r="3" fill="#00ff8c"/>
+    <circle cx="30" cy="-111" r="3" fill="#ffd400"/>
+    <circle cx="48" cy="-111" r="3" fill="#ff4b4b"/>
+  </g>
+
+  <!-- Database cylinder (right) -->
+  <g transform="translate(620,235) scale(0.9)">
+    <ellipse cx="0" cy="0" rx="48" ry="18" fill="url(#chrome)" opacity="0.98"/>
+    <rect x="-48" y="0" width="96" height="72" fill="url(#chrome)"/>
+    <ellipse cx="0" cy="72" rx="48" ry="18" fill="url(#chrome)"/>
+    <ellipse cx="0" cy="0" rx="42" ry="15" fill="none" stroke="url(#amGradient)" stroke-width="3"/>
+  </g>
+
+  <!-- Terminal prompt -->
+  <g transform="translate(360,560)">
+    <rect x="-70" y="-18" width="180" height="42" rx="8" fill="#0b0b0b" opacity="0.9" stroke="url(#chrome)" stroke-width="3"/>
+    <text x="-48" y="12" font-family="monospace" font-size="18" fill="#33ff99">&gt; npm run build</text>
+  </g>
+
+  <!-- Main A (metallic) -->
+  <g filter="url(#softGlow)">
+    <path d="M400 140 L260 520 H320 L360 420 H440 L480 520 H540 L400 140 Z"
+          stroke="url(#chrome)" stroke-width="28" stroke-linejoin="round" fill="none"/>
+    <path d="M340 520 L380 320 L420 520" fill="none" stroke="url(#amGradient)" stroke-width="14" stroke-linecap="round"/>
+    <path d="M330 420 H470" stroke="url(#chrome)" stroke-width="18" stroke-linecap="square"/>
+    <path d="M335 420 L390 360 L445 420" stroke="#0a0a0a" stroke-width="6" stroke-linecap="round" fill="none"/>
+  </g>
+
+  <!-- Letter M (integrated) -->
+  <g filter="url(#deepGlow)">
+    <path d="M250 520 L300 310 L380 430 L460 310 L510 520" fill="none" stroke="url(#amGradient)" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M305 330 L360 400 L415 330" stroke="#ff2b2b" stroke-width="6" stroke-linecap="round"/>
+  </g>
+
+  <!-- Code brackets inside A -->
+  <g transform="translate(490,220) rotate(10)">
+    <path d="M0 0 L-16 -20" stroke="url(#chrome)" stroke-width="8" stroke-linecap="round"/>
+    <path d="M-16 -20 L-32 0" stroke="url(#chrome)" stroke-width="8" stroke-linecap="round"/>
+    <path d="M-8 8 L8 28" stroke="url(#chrome)" stroke-width="8" stroke-linecap="round"/>
+    <path d="M8 28 L24 8" stroke="url(#chrome)" stroke-width="8" stroke-linecap="round"/>
+    <text x="-22" y="6" font-family="monospace" font-size="28" fill="#ffefef" font-weight="700">&lt;/&gt;</text>
+  </g>
+
+  <!-- Circuit pads -->
+  <g stroke="url(#amGradient)" stroke-width="5" stroke-linecap="round">
+    <path d="M300 480 L240 520" fill="none"/>
+    <circle cx="240" cy="520" r="6" fill="#001"/>
+    <path d="M500 480 L560 520" fill="none"/>
+    <circle cx="560" cy="520" r="6" fill="#001"/>
+  </g>
+
+  <!-- Lower PCB traces -->
+  <g stroke="url(#amGradient)" stroke-width="3" opacity="0.95">
+    <path d="M180 620 H220 M200 610 V630" fill="none"/>
+    <path d="M580 620 H620 M600 610 V630" fill="none"/>
+  </g>
+
+  <!-- Energy slits on A -->
+  <g filter="url(#deepGlow)">
+    <path d="M380 240 L370 300" stroke="#ff3030" stroke-width="6" stroke-linecap="round" opacity="0.95"/>
+    <path d="M420 260 L430 320" stroke="#ff3030" stroke-width="6" stroke-linecap="round" opacity="0.95"/>
+  </g>
+
+  <!-- Bottom centered quote: CRAFT LOGIC (Metallic + Gradient + Stroke + Glow) -->
+  <g transform="translate(400,735)">
+    <!-- text stroke (chrome thin outline) -->
+    <text x="0" y="0" text-anchor="middle" font-family="Roboto, Arial, sans-serif" font-weight="800" font-size="28" letter-spacing="6"
+          fill="none" stroke="url(#textStroke)" stroke-width="2" paint-order="stroke">CRAFT LOGIC</text>
+
+    <!-- main gradient fill -->
+    <text x="0" y="0" text-anchor="middle" font-family="Roboto, Arial, sans-serif" font-weight="800" font-size="28" letter-spacing="6"
+          fill="url(#amGradient)" style="mix-blend-mode:screen;" filter="url(#softGlow)">CRAFT LOGIC</text>
+
+    <!-- subtle outer glow -->
+    <text x="0" y="0" text-anchor="middle" font-family="Roboto, Arial, sans-serif" font-weight="800" font-size="28" letter-spacing="6"
+          fill="none" stroke="url(#amGradient)" stroke-width="0.6" opacity="0.6" filter="url(#deepGlow)"/>
+  </g>
+
+  <!-- small label under text (optional tiny tagline) -->
+  <text x="400" y="760" text-anchor="middle" font-family="monospace" font-size="12" fill="#bfc7cf" opacity="0.9">FULL-STACK</text>
+</svg>
