@@ -3,8 +3,28 @@
  * @license Apache-2.0
  */
 
-import { Button } from "./components/ui/button";
+/**
+ * Node Moduels
+ */
+
+import { useEffect } from "react";
+
+/**
+ * Components
+ */
+
+import { Hero } from "@/components/Hero";
+import { Stats } from "@/components/Stats";
+import { Projects } from "@/components/Projects";
+import { About } from "@/components/About";
 
 export const App = () =>{
-    return <Button>Hello World</Button>
+    return (
+        <main className="flex flex-col container mx-auto p-10 max-w-4xl lg:pr-10 lg:pl-0 lg:max-w-6xl">
+            <Hero/>
+            <Stats/>
+            <Projects/>
+            <About/>
+        </main>
+    )
 }

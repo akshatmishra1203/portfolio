@@ -35,6 +35,7 @@ import {
     Smartphone,
     Twitter,
     User,
+    Github,
     Youtube,
 } from 'lucide-react';
 
@@ -62,18 +63,13 @@ const navLinks: LinksType[] = [
 
 const socialLinks: LinksType[] = [
     {
-        icon: Facebook,
-        label: 'Facebook',
-        link: '/#',
-    },
-    {
         icon: Instagram,
         label: 'Instagram',
         link: '/#',
     },
     {
-        icon: User,
-        label: 'User',
+        icon: Github,
+        label: 'Github',
         link: '/#',
     },
     {
@@ -85,29 +81,42 @@ const socialLinks: LinksType[] = [
 
 const projectsData: ProjectType[] = [
     {
-        imgSrc: '/images/project-ph-1.jpeg',
-        title: 'Full stack music app',
-        tags: ['API', 'Development'],
-        projectLink: 'https://musify-5al0.onrender.com/',
+        imgSrc: '/images/Music.png',
+        title: 'Resso - A Music App',
+        tags: ['React.js' , 'MongoDB' , 'TypeScript' , 'API'],
+        projectLink: 'https://resso.onrender.com/',
     },
     {
-        imgSrc: '/images/project-ph-2.jpeg',
-        title: 'Full stack music app',
-        tags: ['API', 'Development'],
-        projectLink: 'https://musify-5al0.onrender.com/',
+        imgSrc: '/images/EMS.png',
+        title: 'Employee Management System',
+        tags: ['React.js', 'Local Storage'],
+        projectLink: '#NIL',
     },
     {
-        imgSrc: '/images/project-ph-3.jpeg',
-        title: 'Full stack music app',
-        tags: ['API', 'Development'],
-        projectLink: 'https://musify-5al0.onrender.com/',
+        imgSrc: '/images/portfolio.png',
+        title: 'Portfolio Website',
+        tags: ['React.js', 'TypeScript' , 'TailwindCSS'],
+        projectLink: '#NIL',
     },
     {
-        imgSrc: '/images/project-ph-4.jpeg',
-        title: 'Full stack music app',
-        tags: ['API', 'Development'],
-        projectLink: 'https://musify-5al0.onrender.com/',
+        imgSrc: '/images/twitter.png',
+        title: 'Twitter - A Clone App',
+        tags: ['API', 'Next.js'],
+        projectLink: '#',
     },
+    {
+        imgSrc: '/images/UBER.png',
+        title: 'CarRide - A Car Rental App',
+        tags: ['API', 'Next.js' , 'MicroServices'],
+        projectLink: '#',
+    },
+    {
+        imgSrc: '/images/Zomato.png',
+        title: 'FoodDelivery App with Reel integrated Feature',
+        tags: ['API', 'Next.js' , 'MicroServices'],
+        projectLink: '#',
+    },
+    
 ];
 
 const education: ExperienceType[] = [
@@ -216,15 +225,15 @@ const services: ServiceType[] = [
 
 const statsData: StatsType[] = [
     {
-        number: '30+',
-        label: 'Happy Clients',
+        number: '10+',
+        label: 'Technologies Mastered',
     },
     {
         number: '05+',
-        label: 'Years Of Experience',
+        label: 'Technical Certification',
     },
     {
-        number: '50+',
+        number: '20+',
         label: 'Projects Done',
     },
 ];
