@@ -19,14 +19,13 @@ import { fadeUp } from "@/lib/animation";
  * Types
  */
 
-import type { TestimonialsType } from "@/types";
+import type { CertificateType } from "@/types";
 
 export const CertificationCard = ({ 
     imgSrc ,
-    CertiLink,
     tags,
     title,
-} :  TestimonialsType ) =>{
+} :  CertificateType ) =>{
     return (
         <motion.div
         variants={fadeUp}
@@ -43,7 +42,7 @@ export const CertificationCard = ({
             <div
             className="absolute bottom-0 p-2 flex gap-2" 
             >
-                {tags.map((tag, i)=>(
+                {tags.map((tag:string, i:number)=>(
                     <span
                     key={i}
                     className="bg-background hover:bg-primary hover:text-black py-1 px-2 rounded-sm text-sm cursor-pointer"

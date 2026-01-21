@@ -21,7 +21,6 @@ import type {
  */
 import {
     Briefcase,
-    Facebook,
     FileText,
     Globe,
     Home,
@@ -33,10 +32,8 @@ import {
     Rocket,
     Settings,
     Smartphone,
-    Twitter,
     User,
     Github,
-    Youtube,
 } from 'lucide-react';
 
 const navLinks: LinksType[] = [
