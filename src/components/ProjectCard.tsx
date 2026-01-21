@@ -23,7 +23,6 @@ import type { ProjectType } from "@/types";
 
 export const ProjectCard = ({ 
     imgSrc ,
-    projectLink,
     tags,
     title,
 } :  ProjectType ) =>{
