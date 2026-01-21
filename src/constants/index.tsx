@@ -12,7 +12,7 @@ import type {
     ProjectType,
     ServiceType,
     StatsType,
-    TestimonialsType,
+    CertificateType,
     ToolsType,
 } from '@/types';
 
@@ -54,8 +54,8 @@ const navLinks: LinksType[] = [
     },
     { label: 'Resume', link: '#resume', icon: FileText },
     {
-        label: 'Reviews',
-        link: '#testimonials',
+        label: 'Certification',
+        link: '#certification',
         icon: MessageCircle,
     },
     { label: 'Contact', link: '#contact', icon: Mail },
@@ -83,7 +83,7 @@ const projectsData: ProjectType[] = [
     {
         imgSrc: '/images/Music.png',
         title: 'Resso - A Music App',
-        tags: ['React.js' , 'MongoDB' , 'TypeScript' , 'API'],
+        tags: ['React.js', 'MongoDB', 'TypeScript', 'API'],
         projectLink: 'https://resso.onrender.com/',
     },
     {
@@ -95,7 +95,7 @@ const projectsData: ProjectType[] = [
     {
         imgSrc: '/images/portfolio.png',
         title: 'Portfolio Website',
-        tags: ['React.js', 'TypeScript' , 'TailwindCSS'],
+        tags: ['React.js', 'TypeScript', 'TailwindCSS'],
         projectLink: '#NIL',
     },
     {
@@ -107,50 +107,63 @@ const projectsData: ProjectType[] = [
     {
         imgSrc: '/images/UBER.png',
         title: 'CarRide - A Car Rental App',
-        tags: ['API', 'Next.js' , 'MicroServices'],
+        tags: ['API', 'Next.js', 'MicroServices'],
         projectLink: '#',
     },
     {
         imgSrc: '/images/Zomato.png',
         title: 'FoodDelivery App with Reel integrated Feature',
-        tags: ['API', 'Next.js' , 'MicroServices'],
+        tags: ['API', 'Next.js', 'MicroServices'],
         projectLink: '#',
     },
-    
+
 ];
 
 const education: ExperienceType[] = [
     {
-        year: '2018 – 2020',
-        title: 'Bachelor of Computer Science',
-        institute: 'National University of Technology',
-        desc: 'Focused on front-end development, UI design, and web application architecture.',
+        year: '2018 - 2019',
+        title: ' 10th (High School) ',
+        institute: ' Maa Durga Ji Senior Secondary Vidayalaya ',
+        company: '',
+        desc: '  ',
     },
     {
-        year: '2021 – 2022',
-        title: 'Frontend Development Bootcamp',
-        institute: 'Udemy / Online Course',
-        desc: 'Learned modern JavaScript, React, and responsive UI patterns through real-world projects.',
+        year: '2020 - 2021',
+        title: ' 12th (Senior Secondary) ',
+        institute: ' Maa Durga Ji Senior Secondary Vidayalaya  ',
+        company: '',
+        desc: '  ',
     },
     {
-        year: '2023',
-        title: 'Advanced UI/UX Design Course',
-        institute: 'Design+Code',
-        desc: 'Explored advanced design systems, motion design, and accessibility best practices.',
+        year: '2021 - 2025',
+        title: 'Bachelor Of Technology ( B.Tech) ',
+        institute: ' Oriental Institute Of Science and Technology ',
+        company: '',
+        desc: ' Electronics and Communication Engineering ',
     },
 ];
 
 const experience: ExperienceType[] = [
     {
-        year: '2021 – 2022',
+        year: 'Aug 2024 – October 2024',
         title: 'Frontend Developer Intern',
-        institute: 'PixelForge Studio',
+        institute: '',
+        company: 'Skill Chase India',
+        desc: 'Built and optimized responsive websites, collaborating closely with designers and backend teams.',
+    },
+
+    {
+        year: 'November 2024 – May 2025',
+        title: 'Frontend Developer Intern',
+        institute: 'Freelance',
+        company: 'Willkings HealthCare Pvt. Ltd.',
         desc: 'Built and optimized responsive websites, collaborating closely with designers and backend teams.',
     },
     {
-        year: '2022 – Present',
+        year: '2025 – Present',
         title: 'UI Engineer',
-        institute: 'Freelance / Remote Work',
+        institute: 'Freelance',
+        company: 'Remote Work',
         desc: 'Designed and developed web interfaces for SaaS startups using React, Tailwind, and Figma.',
     },
 ];
@@ -188,37 +201,81 @@ const tools: ToolsType[] = [
         label: 'Mongodb',
         imgSrc: '/images/tools/mongodb.svg',
     },
+    {
+        label: 'HTML5',
+        imgSrc: '/images/tools/html.svg'
+    },
+    {
+        label: 'Git',
+        imgSrc: '/images/tools/git.svg'
+    },
+    {
+        label: 'Github',
+        imgSrc: '/images/tools/github.svg'
+    },
+    {
+        label: 'Auth0',
+        imgSrc: '/images/tools/auth0.svg'
+    },
+    {
+        label: 'Threejs',
+        imgSrc: '/images/tools/threejs.svg'
+    },
+    {
+        label: 'Api',
+        imgSrc: '/images/tools/api.svg'
+    },
+    {
+        label: 'BootStrap',
+        imgSrc: '/images/tools/bootstrap.svg'
+    },
+    {
+        label: 'Next.js',
+        imgSrc: '/images/tools/nextjs.svg'
+    },
+    {
+        label: 'postman',
+        imgSrc: '/images/tools/postman.svg'
+    },
+    {
+        label: 'Vercel',
+        imgSrc: '/images/tools/vercel.svg'
+    },
+    {
+        label: 'VSCode',
+        imgSrc: '/images/tools/vscode.svg'
+    }
 ];
 
 const services: ServiceType[] = [
     {
-        title: 'Brand Identity',
-        desc: 'I craft modern visual identities that help brands stand out through strong typography, colors, and minimal design.',
-        projects: '32 Projects',
+        title: 'Frontend Development (React.js)',
+        desc: 'I build fast, interactive, and component-driven user interfaces using React.js. My focus is clean code, optimal performance, and seamless user experiences that make web applications feel dynamic, modern, and easy to use.',
+        projects: '12 Projects',
         icon: <Palette className='h-6 w-6 text-green-400' />,
     },
     {
         title: 'UI/UX Design',
-        desc: 'Designing clean, intuitive, and user-friendly interfaces that improve user experience and boost conversions.',
-        projects: '47 Projects',
+        desc: 'I craft intuitive, visually appealing user experiences focused on clarity, usability, and seamless interaction. My designs combine user research, wireframes, and modern aesthetics to create interfaces that enhance engagement and make applications effortless to navigate.',
+        projects: '07 Projects',
         icon: <Layers className='h-6 w-6 text-green-400' />,
     },
     {
-        title: 'Web Development',
-        desc: 'Building high-performance, SEO-friendly websites using Next.js, Tailwind, and modern web technologies.',
-        projects: '58 Projects',
+        title: 'Full-Stack MERN Development',
+        desc: 'I develop complete web applications using MongoDB, Express, React, and Node.js. From frontend interfaces to backend logic, I deliver scalable, secure, and fully functional solutions tailored to business needs.',
+        projects: '18 Projects',
         icon: <Globe className='h-6 w-6 text-green-400' />,
     },
     {
-        title: 'Mobile App Design',
-        desc: 'Creating pixel-perfect app interfaces optimized for both iOS and Android devices with smooth usability.',
+        title: 'Responsive Web Design',
+        desc: 'I create modern, mobile-friendly websites that automatically adjust to every screen size, delivering smooth navigation, clean layouts, and fast performance. This ensures a consistent, high-quality user experience on all devices.',
         projects: '21 Projects',
         icon: <Smartphone className='h-6 w-6 text-green-400' />,
     },
     {
-        title: 'Product Launch Strategy',
-        desc: 'Helping startups prepare their digital products for launch with design systems, marketing pages, and assets.',
-        projects: '15 Projects',
+        title: 'Custom Web Application Development',
+        desc: 'I build tailored web applications designed to match unique business requirements. My solutions focus on functionality, scalability, and performance to deliver reliable digital tools for growth and automation.',
+        projects: '05 Projects',
         icon: <Rocket className='h-6 w-6 text-green-400' />,
     },
 ];
@@ -238,27 +295,54 @@ const statsData: StatsType[] = [
     },
 ];
 
-const testimonials: TestimonialsType[] = [
+const certification: CertificateType[] = [
     {
-        name: 'Alex Tomato',
-        role: 'Brand Manager at Instant Design',
-        image: 'https://randomuser.me/api/portraits/men/32.jpg',
-        text: 'Working with David was an absolute pleasure. His attention to detail, creative insights, and ability to translate complex ideas into stunning visuals truly set him apart. He consistently went above and beyond to ensure the project exceeded expectations.',
-        link: '#',
+        imgSrc: "/AWS.png",
+        title: "AWS Cloud Technical Essentials",
+        tags: ["AWS","Cloud Computing","Basics"],
+        CertiLink: "https://drive.google.com/file/d/1iKgXgb47SOQFymrxK2PYQMCE7n7r7j97/view?usp=sharing"
     },
     {
-        name: 'Sara Bloom',
-        role: 'Founder at Bloom Agency',
-        image: 'https://randomuser.me/api/portraits/women/65.jpg',
-        text: 'David brought my brand vision to life better than I could have imagined. He is not only professional and highly skilled but also incredibly responsive and collaborative. Every aspect of the project was handled with precision and creativity.',
-        link: '#',
+        imgSrc: "/C++.png",
+        title: "C++ Programming",
+        tags: ["C++", "Programming"],
+        CertiLink: "#"
     },
     {
-        name: 'John Park',
-        role: 'CEO at PixelFlow',
-        image: 'https://randomuser.me/api/portraits/men/45.jpg',
-        text: 'From UI/UX design to front-end implementation, David handled every detail flawlessly. His problem-solving skills, innovative approach, and dedication made the entire process smooth and enjoyable. I would highly recommend him for any design-driven project.',
-        link: '#',
+        imgSrc: "FEC.png",
+        title: "Front-End Development",
+        tags: ["HTML", "CSS", "JavaScript"],
+        CertiLink: "#"
+    },
+    {
+        imgSrc: "Html.png",
+        title: "HTML5 Programming",
+        tags: ["HTML5", "Programming"],
+        CertiLink: "#"
+    },
+    {
+        imgSrc:"Intern.jpeg",
+        title: "Frontend Developer Intern",
+        tags: ["Frontend", "Internship"],
+        CertiLink: "#"
+    },
+    {
+        imgSrc : "React.png",
+        title: "React.js Development",
+        tags: ["React.js", "Frontend"],
+        CertiLink: "#"
+    },
+    {
+        imgSrc: "JSE.png",
+        title: "JavaScript Programming",
+        tags: ["JavaScript", "Programming" , "Expert"],
+        CertiLink: "#"
+    },
+    {
+        imgSrc: "Oracle.png",
+        title: "Oracle Database SQL Certified",
+        tags: ["SQL", "Database"],
+        CertiLink: "#"
     },
 ];
 
@@ -271,5 +355,5 @@ export {
     services,
     navLinks,
     statsData,
-    testimonials,
+    certification,
 };

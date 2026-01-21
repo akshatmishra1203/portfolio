@@ -15,7 +15,8 @@ export type ProjectType = {
 export type ExperienceType = {
   year: string;
   title: string;
-  institute: string;
+  company: string;
+  institute : string;
   desc: string;
 };
 
@@ -36,12 +37,11 @@ export type StatsType = {
   label: string;
 };
 
-export type TestimonialsType = {
-  name: string;
-  role: string;
-  image: string;
-  text: string;
-  link: string;
+export type CertificateType = {
+ imgSrc: string;
+  title: string;
+  tags: string[];
+  CertiLink: string;
 };
 
 export type LinksType = {

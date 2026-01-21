@@ -61,6 +61,12 @@ export const Profile = () => {
                 >
                     <a href="https://drive.google.com/file/d/1PvIuWMEaBQoHuNO8RMO_n9Gsy9bUGr5Z/view?usp=sharing" target="_blank">View Resume!</a>
                 </Button>
+                <Button
+                className="mt-2"
+                size="lg"
+                >
+                    <a href="https://drive.google.com/drive/folders/1qPssiXA-YaxxSB2AGFEvGAUp84poJOYw?usp=sharing" target="_blank">View Certifications!</a>
+                </Button>
             </div>
         </aside>
     )
